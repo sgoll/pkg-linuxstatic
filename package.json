@@ -1,0 +1,22 @@
+{
+  "name": "pkg-linuxstatic",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pkg . --targets node14.17.2-linuxstatic-armv7"
+  },
+  "devDependencies": {
+    "pkg": "^5.3.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.4.1"
+  },
+  "resolutions": {
+    "pkg/pkg-fetch": "3.2.2"
+  },
+  "bin": "src/index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/better-sqlite3/build/Release/better_sqlite3.node"
+    ]
+  }
+}
